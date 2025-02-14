@@ -169,7 +169,7 @@ public class ChartController {
          */
         String suffix = FileUtil.getSuffix(originalFilename);
         // 定义合法的后缀列表
-        final List<String> validFileSuffixList = Arrays.asList("xlsx", "png", "jpg", "svg", "webp", "jpeg");
+        final List<String> validFileSuffixList = Arrays.asList("xlsx", "xls");
         // 如果suffix的后缀不在List的范围内,抛出异常,并提示'文件后缀非法'
         ThrowUtils.throwIf(!validFileSuffixList.contains(suffix), ErrorCode.PARAMS_ERROR, "文件后缀非法");
 
